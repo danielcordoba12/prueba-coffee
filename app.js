@@ -34,6 +34,8 @@ app.set ('view engine','ejs');
 app.set('views','./src/view');
 
 app.use(express.static('./src/styles'));
+
+
 app.use(express.static('fronted'))
 
 app.get('/documents', (req,res) =>{
